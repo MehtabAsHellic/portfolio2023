@@ -1,0 +1,117 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4285f4;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.profile-image img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .profile-content {
+    margin-left: 50px;
+    text-align: left;
+  }
+}
+
+.back-to-home {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.back-to-home:hover {
+  background-color: #3367d6;
+}
+.linkedin-contact {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0077b5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.linkedin-contact:hover {
+  background-color: #005d98;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+}
